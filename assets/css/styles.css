@@ -208,6 +208,10 @@ img {
     color: var(--first-color);
 }
 
+.job__position {
+    color: var(--second-color);
+}
+
 .home__social {
     display: flex;
     flex-direction: column;
@@ -552,5 +556,9 @@ img {
 
     .home__img {
         width: 450px;
+    }
+
+    .home__blob {
+        margin-left: 2rem;
     }
 }

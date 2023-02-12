@@ -42,15 +42,20 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi, I'am <span class="home__title-color">Joe<br>Natthapon Pantha</span><br> Web Designer<br>From Thailand.</h1>
+                <h1 class="home__title">Hi, I'am <span class="home__title-color">Joe<br>Natthapon Pantha</span>
+                    <br><span class="job__position"></span><br>From Thailand.
+                </h1>
 
                 <a href="#" class="button">Contact</a>
             </div>
 
             <div class="home__social">
-                <a href="https://www.facebook.com/natthapol.pantha/" target="_blank" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/natthajoe/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/joenatthapondev" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/natthapol.pantha/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/natthajoe/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/joenatthapondev" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
             </div>
 
             <div class="home__img">
@@ -210,6 +215,18 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
+    <!-- ==== TEXT ANIMETION ====  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".job__position", {
+            strings: ["Front End Developer", "Web Designer", "UX/UI Designer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
