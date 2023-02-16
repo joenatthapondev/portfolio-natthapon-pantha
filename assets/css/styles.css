@@ -323,7 +323,7 @@ img {
 
 .skills__img {
     border-radius: .5rem;
-    outline: 5px solid red;
+    /* outline: 5px solid red; */
 }
 
 /* ===== WORK =====*/
