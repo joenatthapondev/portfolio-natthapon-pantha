@@ -46,7 +46,7 @@
                     <br><span class="job__position"></span><br>From Thailand.
                 </h1>
 
-                <a href="#" class="button">Contact</a>
+                <a href="resume-natthapon-pantha.pdf" target="_blank" class="button">Download CV</a>
             </div>
 
             <div class="home__social">
@@ -84,7 +84,7 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Joe Natthapon Pantha</h2>
+                    <h2 class="about__subtitle">I'am Natthapon Pantha</h2>
                     <p class="about__text">As a driven and creative front-end developer, I bring a passion for
                         designing and building user-friendly websites that engage and delight visitors.
                         <br>I am always eager to learn and grow, constantly seeking out new tools and technologies
@@ -101,7 +101,7 @@
             <h2 class="section-title">Skills</h2>
 
             <div class="skills__container bd-grid">
-                <div>
+                <div class="skills__wraper">
                     <h2 class="skills__subtitle">Profesional Skills</h2>
                     <p class="skills__text">With a strong foundation in HTML, CSS, and JavaScript,
                         I am able to turn complex design concepts into clean, efficient code that performs
@@ -164,51 +164,104 @@
             <h2 class="section-title">Work</h2>
 
             <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="assets/img/work1.jpg" alt="">
+                <a href="https://joenatthapondev-loopstudios-landing-p.netlify.app/" target="_blank" class="work__img item">
+                    <img src="assets/img/loopstudios-landing-p-netlify-app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work2.jpg" alt="">
+                <a href="https://joenatthapondev-blogr-landing-page.netlify.app/" target="_blank" class="work__img item">
+                    <img src="assets/img/blogr-landing-page-netlify-app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work3.jpg" alt="">
+                <a href="https://joenatthapondev-sunnyside-agency-ldp.netlify.app/" target="_blank" class="work__img item">
+                    <img src="assets/img/sunnyside-agency-ldp-netlify-app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work4.jpg" alt="">
+                <a href="https://joenatthapondev-social-theme-switcher.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/social-theme-switcher-netlify-app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work5.jpg" alt="">
+                <a href="https://joenatthapondev-coding-bootcamp-ttmns.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/coding-bootcamp-ttmns-netlify-app.png" alt="">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work6.jpg" alt="">
+                <a href="https://joenatthapondev-testimonials-grid-sec.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/testimonials-grid-sec-netlify-app.png" alt="">
                 </a>
+                <a href="https://joenatthapondev-base-apparel-cs-page.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/base-apparel-cs-page-netlify-app.png" alt="">
+                </a>
+                <a href="https://joenatthapondev-timetrackingdashboard.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/timetrackingdashboard-netlify-app.png" alt="">
+                </a>
+                <a href="https://joenatthapondev-intro-dropdown-nav.netlify.app/" target="_blank" class="work__img">
+                    <img src="assets/img/intro-dropdown-nav-netlify-app.png" alt="">
+                </a>
+            </div>
+            <div class="more">
+                <a href="https://github.com/joenatthapondev?tab=repositories" target="_blank" class="button__more">MORE ON GITHUB</a>
             </div>
         </section>
 
         <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
+        <!-- <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
+                <form action="#" class="contact__form" onsubmit="sendEmail(); reset(); return false;">
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
+                    <textarea name="message" id="message" placeholder="Your Message" cols="0" rows="10"
+                        class="contact__input"></textarea>
+                    
+                    <button type="submit" class="contact__button button">Submit</button>
+                </form>
+            </div>
+        </section> -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="#">
+                    <div class="input__control">
+                        <label for="">Name</label><br>
+                        <input type="text" placeholder="Enter Your Name" id="Name" class="contact__input">
+                    </div>
+                    <div class="input__control">
+                        <label for="">Email</label><br>
+                        <input type="text" placeholder="Enter Your Email" id="Email" class="contact__input">
+                    </div>
+
+                    <div class="input__control">
+                        <label for="">Contact Number</label><br>
+                        <input type="text" placeholder="Enter Your Contact Number" id="Contact" class="contact__input">
+                    </div>
+                    <div class="input__control">
+                        <label for="">Subject</label><br>
+                        <input type="text" placeholder="Enter Your Subject" id="Subject" class="contact__input">
+                    </div>
+
+                    <div class="input__control">
+                        <label for="">Message</label><br>
+                        <textarea name="" id="message" class="contact__input" rows="3"
+                            placeholder="Enter Your Message"></textarea>
+                    </div>
+
+                    <div class="input__control">
+                        <button class="contact__button button" type="button" onclick="sendEmail()">Submit</button>
+                    </div>
+
                 </form>
             </div>
         </section>
+
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-        <p class="footer__title">Marlon</p>
+        <p class="footer__title">Natthapon Pantha</p>
         <div class="footer__social">
-            <a href="https://www.facebook.com/natthapol.pantha/" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/natthajoe/" target="_blank" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="https://github.com/joenatthapondev" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/natthapol.pantha/" target="_blank" class="footer__icon"><i
+                    class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/natthajoe/" target="_blank" class="footer__icon"><i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/joenatthapondev" target="_blank" class="footer__icon"><i
+                    class='bx bxl-github'></i></a>
         </div>
-        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        <p class="footer__copy">&#169; Natthapon Pantha. All rigths reserved</p>
     </footer>
 
 
@@ -228,6 +281,38 @@
             backSpeed: 150,
             loop: true
         })
+    </script>
+
+    <!-- Contact -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+
+
+        function sendEmail() {
+            let name = document.getElementById("Name").value;
+            let email = document.getElementById("Email").value;
+            let contact = document.getElementById("Contact").value;
+            let subject = document.getElementById("Subject").value;
+            let message = document.getElementById("message").value;
+
+            let body = "Name : " + name + "<br/> Email : " + email + "<br/> Contact : " + contact +
+                "<br/> Subject : " + subject + "<br/> Message : " + message;
+
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "s61127328022@ssru.ac.th",
+                Password: "9AA09D283D139C9667C909FC66EE027F6916",
+                To: 'joenatthapon.developer@gmail.com',
+                From: "s61127328022@ssru.ac.th",
+                Subject: subject,
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        }
+
     </script>
 </body>
 
