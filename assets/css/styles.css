@@ -348,6 +348,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .button__more {
@@ -372,7 +373,17 @@ img {
     transform: scale(1.1);
 }
 
+.work__link {
+    display: flex;
+    justify-content: center;
+
+}
+
 /* ===== CONTACT =====*/
+form {
+    width: auto;
+}
+
 .contact__input {
     width: 100%;
     font-size: var(--normal-font-size);
@@ -596,7 +607,11 @@ img {
         grid-template-columns: auto;
     }
 
-    .skills__data{
+    .skills__data {
         justify-content: center;
+    }
+
+    .button__more {
+        padding: 0.75rem 1.5rem;
     }
 }
